@@ -1,0 +1,83 @@
+body {
+    font-family: Montserrat, serif;
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 177px;
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+}
+
+
+
+.site-navigation-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    font-size: 16px;
+}
+
+.site-navigation-wrapper p {
+    margin: 0;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.mail {
+    margin-top: auto;
+    color: #69A54D;
+    font-size: 20px;
+}
+
+.languages-and-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    font-size: 16px;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.language-switcher {
+    display: flex;
+    gap:7px
+}
+
+.language-switcher div {
+    border:1px solid rgba(196, 196, 196, 0.3);
+}
+
+.language-switcher span:last-child {
+    color: #69A54D;
+}
+
+.language-selection {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+.telephone-numbers p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
