@@ -1,11 +1,20 @@
 body {
     font-family: Montserrat, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
 }
+
+/*header*/
 
 .page-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 1290px;
 }
 
 .logo {
@@ -17,7 +26,6 @@ body {
     align-items: center;
     gap: 58px;
 }
-
 
 
 .site-navigation-wrapper {
@@ -35,12 +43,14 @@ body {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .mail {
     margin-top: auto;
     color: #69A54D;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .languages-and-contacts {
@@ -57,27 +67,594 @@ body {
 
 .language-switcher {
     display: flex;
-    gap:7px
+    gap: 7px
 }
 
 .language-switcher div {
-    border:1px solid rgba(196, 196, 196, 0.3);
+    border: 1px solid rgba(196, 196, 196, 0.3);
+}
+
+.language-switcher span:first-child {
+    cursor: pointer;
 }
 
 .language-switcher span:last-child {
     color: #69A54D;
+    cursor: pointer;
 }
 
 .language-selection {
     display: flex;
     gap: 8px;
     align-items: center;
+    cursor: pointer;
 }
 
 
-.telephone-numbers p{
+.telephone-numbers p {
     margin: 0;
     font-weight: 600;
     font-size: 20px;
 }
+
+/*main content*/
+
+main {
+    width: 100%;
+}
+
+.main-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    width: 1290px;
+}
+
+.main-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 69px;
+}
+
+/*hero-block*/
+
+.hero-wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.hero-image {
+    filter: brightness(50%);
+}
+
+.hero-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1290px;
+    margin-top: 19px;
+    z-index: 2;
+    color: white;
+}
+
+.hero-navigation div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    width: 838px;
+}
+
+.hero-navigation div p {
+    cursor: pointer;
+    margin: 0;
+}
+
+.hero-title {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-title h1 {
+    font-size: 108px;
+    font-weight: 800;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.hero-title p {
+    width: 882px;
+    margin: 23px 0 0 0;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+}
+
+.carousel {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 1290px;
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.carousel-inner img {
+    cursor: pointer;
+}
+
+.line {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.carousel span {
+    font-size: 96px;
+    font-weight: 700;
+    color: white;
+    opacity: 0.7;
+}
+
+/*statistics*/
+
+.description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.description:last-of-type {
+    margin-top: 30px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 61px;
+}
+
+
+.statistics-number {
+    font-size: 80px;
+    line-height: 97px;
+    font-weight: 700;
+    color: #CDBD84;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.statistics-number span {
+    font-size: 24px;
+    line-height: 58px;
+}
+
+.statistics li p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*elevator-equipment*/
+
+.elevator-equipment {
+    margin-bottom: 75px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.elevator-equipment div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.elevator-equipment .image-container {
+    position: relative;
+    cursor: pointer;
+    width: min-content;
+}
+
+.elevator-equipment .image-container p {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.image-content {
+    position: absolute;
+    padding: 27px;
+}
+
+.elevator-equipment div img:first-child {
+    filter: brightness(70%);
+}
+
+.image-content img {
+    margin-top: 156px;
+    height: 22px;
+    width: 39px;
+}
+
+/*another-equipment*/
+
+.another-equipment {
+    margin-bottom: 69px;
+}
+
+.another-equipment div {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.another-equipment .image-container {
+    position: relative;
+    cursor: pointer;
+    width: min-content;
+}
+
+.another-equipment .image-container p {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.another-equipment div img:first-child {
+    filter: brightness(70%);
+}
+
+.another-equipment-info {
+    margin-top: 62px;
+}
+
+.another-equipment-info p {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+}
+
+/*services*/
+
+.services {
+    margin-bottom: 67px;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service {
+    width: min-content;
+}
+
+.services .image-container {
+    position: relative;
+    cursor: pointer;
+    width: min-content;
+}
+
+.content {
+    position: absolute;
+    top: 60%;
+    left: 83%;
+    z-index: 2;
+}
+
+.content p {
+    font-size: 72px;
+    font-weight: 700;
+    opacity: 0.5;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.service-description h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #69A54D;
+    margin: 31px 0 0 0;
+}
+
+.service-description p {
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+/*company-news*/
+
+.company-news {
+    margin-bottom: 130px;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-wrapper div {
+    display: flex;
+    gap: 25px;
+}
+
+.title-wrapper img {
+    cursor: pointer;
+}
+
+.news-content {
+    display: flex;
+    gap: 30px;
+}
+
+.news-card {
+    width: min-content;
+}
+
+.news-card h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #69A54D;
+    margin: 31px 0 17px 0;
+}
+
+.news-card time {
+    font-size: 14px;
+    font-weight: 600;
+    color: #CAC1A0;
+}
+
+.news-card p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*feedback-form*/
+
+.feedback-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7F9D64;
+    padding-top: 75px;
+    padding-bottom: 102px;
+}
+
+.form-container {
+    width: 1290px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+form h3 {
+    margin-bottom: 55px;
+    margin-top: 0;
+}
+
+form span {
+    font-size: 16px;
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+form button {
+    width: 250px;
+    height: 48px;
+    color: #69A54D;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat, serif;
+    cursor: pointer;
+}
+
+.inputs-container {
+    width: 100%;
+}
+
+.form-container h3 {
+    color: white;
+}
+
+.form-container input {
+    background-color: #7F9D64;
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    color: white;
+    padding: 13px 0 13px 19px;
+    font-size: 16px;
+}
+
+.form-container textarea {
+    background-color: #7F9D64;
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    color: white;
+    padding: 13px 0 13px 19px;
+    font-size: 16px;
+}
+
+.form-container textarea::placeholder {
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat, serif;
+}
+
+.form-container input::placeholder {
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat, serif;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputs-container .contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.form-container .contact-info input {
+    flex: 1; /* Сделать все input равной ширины */
+    min-width: 0; /* Предотвращает переполнение */
+}
+
+
+.inputs-container textarea {
+    resize: none;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background-color: rgba(232, 222, 186, 0.28);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer section {
+    width: 100%;
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    justify-content: center;
+    align-items: center;
+}
+
+footer section:last-child {
+    border-bottom: none;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 64px 0;
+    gap: 94px;
+}
+
+.footer-menu img {
+    width: 132px;
+    height: 116px;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 16px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    padding: 40px 0;
+}
+
+.contacts {
+    display: flex;
+    width: 1290px;
+}
+
+.contacts p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contacts div:first-child {
+    margin-right: 178px;
+}
+
+.contacts div:nth-child(2) {
+    margin-right: 140px;
+}
+
+.contacts img{
+    width: 32px;
+    height: 32px;
+}
+
+
+.company-info-wrapper {
+    display: flex;
+    padding-top: 26px;
+    padding-bottom: 36px;
+    background-color: white;
+}
+
+.company-info {
+    display: flex;
+    width: 1290px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.company-info p {
+    font-size: 16px;
+    color: rgba(34, 34, 34, 1);
+}
+
+.company-info p:nth-child(3) {
+    margin-right: 100px
+}
+
 
