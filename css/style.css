@@ -12,6 +12,14 @@ body {
 
 .page-header {
     display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 1290px;
@@ -95,6 +103,39 @@ body {
     margin: 0;
     font-weight: 600;
     font-size: 20px;
+}
+
+.sub-header-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(127, 157, 100, 1);
+    width: 100%;
+    margin-bottom: 62px;
+}
+
+.sub-header {
+    width: 1290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
+}
+
+.sub-header a {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.sub-header a:first-child{
+    padding-bottom: 10px;
+}
+
+.sub-header img {
+    margin-left: 118px;
+    cursor: pointer;
 }
 
 /*main content*/
