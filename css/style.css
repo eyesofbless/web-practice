@@ -129,7 +129,7 @@ body {
     cursor: pointer;
 }
 
-.sub-header a:first-child{
+.sub-header a:first-child {
     padding-bottom: 10px;
 }
 
@@ -669,7 +669,7 @@ footer section:last-child {
     margin-right: 140px;
 }
 
-.contacts img{
+.contacts img {
     width: 32px;
     height: 32px;
 }

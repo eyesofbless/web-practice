@@ -1,5 +1,9 @@
 /*main-content*/
 
+.bread-crumbs {
+    line-height: 30px;
+}
+
 .bread-crumbs span {
     font-size: 14px;
 }
@@ -27,6 +31,8 @@
     font-size: 48px;
     font-weight: 700;
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 60px;
 }
 
 .list {
@@ -91,7 +97,9 @@
     gap: 12px;
 }
 
-
+.page-numbers span {
+    cursor: pointer;
+}
 
 .page-numbers .active {
     background-color: #cdbd83;
