@@ -7,14 +7,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>ЭММ</title>
 </head>
 <body>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="popup">
+    <div class="menu">
+        <div class="menu-wrapper">
+            <div>
+                <p class="site-navigation-item">О компании</p>
+                <p class="site-navigation-item">Вакансии</p>
+                <p class="site-navigation-item">Новости</p>
+                <p class="site-navigation-item">Контакты</p>
+            </div>
+            <div class="telephone-numbers">
+                <p>8 (86138) 6-34-03, 6-34-06</p>
+            </div>
+            <p class="mail">sale@semm.ru</p>
+            <div>
+                <p>пн-пт 8:00-17:00,</p>
+                <p>перерыв 12:00-13:00,</p>
+                <p>сб-вс: выходной</p>
+            </div>
+        </div>
+        <img onclick="toggleMenu()" src="images/icons/cross.svg" alt="">
+    </div>
+</div>
 <header class="page-header">
     <div class="header-wrapper">
         <div class="logo">
-            <img class="burger-icon" src="images/icons/burger-icon.png" alt="burger-icon">
+            <img onclick="toggleMenu()" class="burger-icon" src="images/icons/burger-icon.png" alt="burger-icon">
             <img src="images/logo.png" width="132" height="116" alt="logo"/>
         </div>
         <div class="header-items">
@@ -31,7 +54,9 @@
                     <p>сб-вс: выходной</p>
                 </div>
             </div>
-            <div class="mail">sale@semm.ru</div>
+            <div class="mail-container">
+                <p class="mail">sale@semm.ru</p>
+            </div>
             <div class="languages-and-contacts">
                 <div class="languages">
                     <div class="language-switcher">
@@ -401,5 +426,6 @@
         </section>
     </div>
 </footer>
+<script src="js/open-menu.js"></script>
 </body>
 </html>
