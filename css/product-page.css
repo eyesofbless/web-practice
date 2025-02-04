@@ -1,64 +1,65 @@
 /*main-content*/
+
 .bread-crumbs span:last-child {
     color: #9c9c9c;
 }
 
-/*card-product*/
+/*product-card*/
 
-.card-product {
+.product-card {
     margin-bottom: 75px;
 }
 
-.card-product h1 {
+.product-card h1 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 60px;
     margin-top: 0;
 }
 
-.product-inner {
+.product-card__inner {
     display: flex;
     gap: 66px;
     margin-bottom: 33px;
 }
 
-.product-info {
+.product-card__info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.product-info p {
+.product-card__info p {
     font-size: 16px;
     line-height: 26px;
 
 }
 
-.product-info p:first-child {
+.product-card__info p:first-child {
     margin-top: 0;
 }
 
-.product-info p:last-of-type {
+.product-card__info p:last-of-type {
     margin-bottom: 0;
 }
 
-.product-info .price {
+.product-card__info .price {
     font-size: 20px;
     font-weight: 600;
     margin-top: 67px;
     margin-bottom: 40px;
 }
 
-.product-info .price span {
+.product-card__price span {
     font-size: 36px;
 }
 
-.buttons-container {
+.product-card__buttons {
     display: flex;
     gap: 27px
 }
 
-.buttons-container button {
+.product-card__buttons button {
     width: 250px;
     height: 48px;
     color: white;
@@ -70,35 +71,35 @@
     font-size: 16px;
 }
 
-.buttons-container button:first-child {
+.product-card__buttons button:first-child {
     background-color: #7F9D64;
 }
 
-.buttons-container button:last-child {
+.product-card__buttons button:last-child {
     background-color: #CDBD84;
 }
 
-.product-photos {
+.product-card__photos {
     display: flex;
     gap: 23px;
 }
 
-.product-photos img {
+.product-card__photos img {
     cursor: pointer;
 }
 
-/*product-detail*/
+/*product-characteristics*/
 
-.product-detail {
+.product-characteristics {
     margin-bottom: 112px;
 }
 
-.product-sections {
+.product-characteristics__sections {
     display: flex;
     gap: 2px;
 }
 
-.product-sections span {
+.product-characteristics__sections span{
     font-size: 16px;
     font-weight: 600;
     padding:16px 28px;
@@ -109,12 +110,12 @@
     border-bottom: 2px solid white;
 }
 
-.product-sections .active{
+.product-characteristics__sections .active{
     background-color: #CDBD84;
     border:none
 }
 
-.details-wrapper {
+.product-table {
     border: 1px solid #CDBD84;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -122,7 +123,7 @@
     padding: 31px 26px 0 26px;
 }
 
-td,th {
+.product-table td,th {
     border: 1px solid #DCDCDC;
     font-size: 14px;
     text-align: center;
@@ -131,68 +132,68 @@ td,th {
 }
 
 
-table {
+.product-table table {
     border-collapse: collapse;
     border-spacing: 0; /* Убираем лишние зазоры */
     margin-bottom: 52px;
     height: 427px;
 }
 
-thead tr:first-child th {
+.product-table thead tr:first-child th {
     border-bottom: 1px solid #7F9D64;
 }
 
-thead tr:first-child th:nth-child(2) {
+.product-table thead tr:first-child th:nth-child(2) {
     vertical-align: top;
 }
 
 
-tr:first-child th {
+.product-table tr:first-child th {
     border-top: none; /* Верхняя внешняя рамка */
 }
 
-tr th:first-child,
-tr td:first-child {
+.product-table tr th:first-child,
+.product-table tr td:first-child {
     border-left: none; /* Левая внешняя рамка */
     text-align: left;
 }
 
-tr th:first-child {
+.product-table tr th:first-child {
     padding-left: 0;
 }
 
 
-.left-align {
+.product-table__left-align {
     text-align: left;
     vertical-align: middle;
     }
 
-tbody tr th:first-child {
+.product-table tbody tr th:first-child {
     font-weight: 400;
     vertical-align: top;
 }
 
-tr th:last-child,
-tr td:last-child {
+.product-table tr th:last-child,
+.product-table tr td:last-child {
     border-right: none; /* Правая внешняя рамка */
 }
 
-tr:last-child td,
-tr:last-child th{
+.product-table tr:last-child td,
+.product-table tr:last-child th{
     border-bottom: none; /* Нижняя внешняя рамка */
 }
 
-.details h2 {
+.product-table__details h2 {
     margin-bottom: 38px;
     margin-top: 0;
 }
 
-.details p:last-child {
+.product-table__details p:last-child {
     margin-top: 40px;
     margin-bottom: 50px;
 }
 
-.details p {
+.product-table__details p {
     font-size: 16px;
     line-height: 26px;
 

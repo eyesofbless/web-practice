@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/list.css" rel="stylesheet">
     <link href="css/product-page.css" rel="stylesheet">
+    <link href="dist/tablet-ver.css" rel="stylesheet">
+    <link href="dist/mobile-ver.css" rel="stylesheet">
     <title>ЭММ</title>
 </head>
 <body>
-<header class="page-header">
-    <div class="header-wrapper">
-        <div class="logo">
-            <img class="burger-icon" src="images/icons/burger-icon.png" alt="burger-icon">
+<div class="page-header">
+    <div class="page-header__content">
+        <div class="page-header__logo-wrapper">
+            <img onclick="toggleMenu()" class="page-header__burger-icon" src="images/icons/burger-icon.png" alt="burger-icon">
             <img src="images/logo.png" width="132" height="116" alt="logo"/>
         </div>
-        <div class="header-items">
-            <div class="site-navigation-wrapper">
-                <div class="site-navigation">
-                    <a class="site-navigation-item">О компании</a>
-                    <a class="site-navigation-item">Вакансии</a>
-                    <a class="site-navigation-item">Новости</a>
-                    <a class="site-navigation-item">Контакты</a>
+        <div class="page-header__header-items">
+            <div class="page-header__navigation-wrapper">
+                <div class="page-header__navigation">
+                    <a class="page-header__navigation-item">О компании</a>
+                    <a class="page-header__navigation-item">Вакансии</a>
+                    <a class="page-header__navigation-item">Новости</a>
+                    <a class="page-header__navigation-item">Контакты</a>
                 </div>
-                <div class="schedule">
+                <div class="page-header__schedule">
                     <p>пн-пт 8:00-17:00,</p>
                     <p>перерыв 12:00-13:00,</p>
                     <p>сб-вс: выходной</p>
                 </div>
             </div>
-            <div class="mail">sale@semm.ru</div>
-            <div class="languages-and-contacts">
-                <div class="languages">
-                    <div class="language-switcher">
+            <div class="page-header__mail-wrapper">
+                <p class="mail">sale@semm.ru</p>
+            </div>
+            <div class="page-header__languages-and-contacts">
+                <div class="page-header__languages">
+                    <div class="page-header__language-switcher">
                         <span>Ru</span>
                         <div></div>
                         <span>En</span>
                     </div>
-                    <div class="language-selection">
+                    <div class="page-header__language-selection">
                         <span>Выбор языка</span>
                         <img src="images/icons/dropdown-button.png" width="9.25" height="9.25" alt="dropdown-button">
                     </div>
@@ -52,8 +52,8 @@
             </div>
         </div>
     </div>
-    <div class="sub-header-container">
-        <div class="sub-header">
+    <div class="sub-header">
+        <div class="sub-header__menu">
             <a>. . .</a>
             <a>Каталог продукции</a>
             <a>Элеваторное оборудование</a>
@@ -63,10 +63,10 @@
             <img src="images/icons/search-icon.png" alt="" width="27" height="27">
         </div>
     </div>
-</header>
-<main>
-    <div class="main-content-wrapper">
-        <div class="main-content">
+</div>
+<div class="main">
+    <div class="main__content-wrapper">
+        <div class="main__content">
             <div class="bread-crumbs">
                 <span>Главная</span>
                 <span>→</span>
@@ -76,11 +76,11 @@
                 <span>→</span>
                 <span>Автомобилеразгрузчик У15-УРАГ</span>
             </div>
-            <section class="card-product">
+            <div class="product-card">
                 <h1>Автомобилеразгрузчик У15-УРАГ</h1>
-                <div class="product-inner">
+                <div class="product-card__inner">
                     <img src="images/product-images/active-image.png" alt="active-image">
-                    <div class="product-info">
+                    <div class="product-card__info">
                         <p>
                             Разгрузчик автомобилей У15-УРАГ предназначен для разгрузки зерна через открытый задний борт
                             из одиночных автомобилей и седельных тягачей с полуприцепами и разгрузки через открытый
@@ -94,34 +94,34 @@
                             Разгрузчик автомобилей изготовлен в климатическом исполнении "У" категории 1 по ГОСТ 15150 -
                             для работы на открытом воздухе в умеренном климате.
                         </p>
-                        <span class="price">Цена от  <span>580 000</span> руб.</span>
-                        <div class="buttons-container">
+                        <span class="product-card__price">Цена от  <span>580 000</span> руб.</span>
+                        <div class="product-card__buttons">
                             <button>Заказать</button>
                             <button> Скачать наш каталог</button>
                         </div>
                     </div>
                 </div>
-                <div class="product-photos">
+                <div class="product-card__photos">
                     <img src="images/product-images/1.png" alt="">
                     <img src="images/product-images/2.png" alt="">
                     <img src="images/product-images/3.png" alt="">
                     <img src="images/product-images/4.png" alt="">
                 </div>
-            </section>
-            <section class="product-detail">
-                <div class="product-sections">
+            </div>
+            <div class="product-characteristics">
+                <div class="product-characteristics__sections">
                     <span class="active">Технические характеристики</span>
                     <span>Принцип действия</span>
                     <span>Преимущества</span>
                     <span>Сертификаты</span>
                     <span>Видео</span>
                 </div>
-                <div class="details-wrapper">
+                <div class="product-table">
                     <table>
                         <thead>
                         <tr>
                             <th scope="col">№</th>
-                            <th class="left-align" scope="col">Наименование технической характеристики</th>
+                            <th class="product-table__left-align" scope="col">Наименование технической характеристики</th>
                             <th scope="col">Ед.изм</th>
                             <th scope="col">У15-УРАГ</th>
                             <th scope="col">У15-УРАГ-У</th>
@@ -136,7 +136,7 @@
                         <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td class="left-align">Производительность техническая max.</td>
+                            <td class="product-table__left-align">Производительность техническая max.</td>
                             <td>т/ч</td>
                             <td>256</td>
                             <td>330</td>
@@ -149,7 +149,7 @@
                         </tr>
                         <tr>
                             <th scope="row" rowspan="3">2</th>
-                            <td class="left-align">Грузоподъемность, не более (в том числе):</td>
+                            <td class="product-table__left-align">Грузоподъемность, не более (в том числе):</td>
                             <td rowspan="3">т</td>
                             <td>55</td>
                             <td>70</td>
@@ -161,7 +161,7 @@
                             <td>56</td>
                         </tr>
                         <tr>
-                            <td class="left-align">большой платформы</td>
+                            <td class="product-table__left-align">большой платформы</td>
                             <td>35</td>
                             <td>50</td>
                             <td>56</td>
@@ -172,7 +172,7 @@
                             <td>56</td>
                         </tr>
                         <tr>
-                            <td class="left-align">боковой платформы</td>
+                            <td class="product-table__left-align">боковой платформы</td>
                             <td>20</td>
                             <td>20</td>
                             <td>20</td>
@@ -184,13 +184,13 @@
                         </tr>
                         <tr>
                             <th style="border-bottom:none" scope="row" rowspan="3">3</th>
-                            <td class="left-align">Длина платформ установочная</td>
+                            <td class="product-table__left-align">Длина платформ установочная</td>
                             <td style="border-bottom:none" rowspan="3">мм</td>
                             <th></th>
                         </tr>
                         <tr>
 
-                            <td class="left-align">платформы большой</td>
+                            <td class="product-table__left-align">платформы большой</td>
                             <td>55</td>
                             <td>70</td>
                             <td>76</td>
@@ -201,7 +201,7 @@
                             <td>56</td>
                         </tr>
                         <tr>
-                            <td class="left-align">платформы большой</td>
+                            <td class="product-table__left-align">платформы большой</td>
                             <td>55</td>
                             <td>70</td>
                             <td>76</td>
@@ -213,7 +213,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <div class="details">
+                    <div class=".product-table__details">
                         <h2>Состав изделия и комплект поставки</h2>
                         <p>платформа большая - 1 шт,</p>
                         <p>платформа боковая - 1 шт,</p>
@@ -229,14 +229,14 @@
                         </p>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-        <section class="feedback-form">
-            <div class="form-container">
+        <div class="feedback-form">
+            <div class="feedback-form__content">
                 <form>
                     <h3>Свяжитесь с нами</h3>
-                    <div class="inputs-container">
-                        <div class="contact-info">
+                    <div class="feedback-form__inputs">
+                        <div class="feedback-form__contact-info">
                             <input placeholder="ФИО">
                             <input placeholder="Телефон">
                             <input placeholder="E-mail">
@@ -247,67 +247,68 @@
                     <button type="submit">Отправить</button>
                 </form>
             </div>
-        </section>
+        </div>
     </div>
-</main>
-<footer>
-    <div class="footer-wrapper">
-        <section class="footer-menu-wrapper">
-            <div class="footer-menu">
-                <div class="logo-container">
-                    <img src="images/logo.png" alt="">
-                    <div class="links">
-                        <a>О компании</a>
-                        <a>Каталог продукции</a>
-                        <a>Услуги</a>
-                        <a>Вакансии</a>
-                        <a>Новости</a>
-                        <a>Контакты</a>
+    </div>
+    <div class="footer">
+        <div class="footer__content">
+            <div class="footer__navigation-wrapper">
+                <div class="footer__navigation">
+                    <div class="footer__logo-wrapper">
+                        <img src="images/logo.png" alt="">
+                        <div class="footer__links">
+                            <a>О компании</a>
+                            <a>Каталог продукции</a>
+                            <a>Услуги</a>
+                            <a>Вакансии</a>
+                            <a>Новости</a>
+                            <a>Контакты</a>
+                        </div>
+                    </div>
+                    <div class="footer__links">
+                        <a>Элеваторное Оборудование</a>
+                        <a>Котлы</a>
+                        <a>Металлоконструкции</a>
+                        <a>Запчасти на элеваторное оборудование</a>
+                        <a>Трубы дымовые</a>
+                        <a>Водонапорные башни</a>
+                    </div>
+                    <div class="footer__links">
+                        <a>Котел-утилизатор</a>
+                        <a>Скреперный транспортёр для уборки навоза</a>
+                        <a>Планетарный бетоносмеситель</a>
+                        <a>Подъемники</a>
+                        <a>Тележки</a>
+                        <a>Неликвиды</a>
                     </div>
                 </div>
-                <div class="links">
-                    <a>Элеваторное Оборудование</a>
-                    <a>Котлы</a>
-                    <a>Металлоконструкции</a>
-                    <a>Запчасти на элеваторное оборудование</a>
-                    <a>Трубы дымовые</a>
-                    <a>Водонапорные башни</a>
-                </div>
-                <div class="links">
-                    <a>Котел-утилизатор</a>
-                    <a>Скреперный транспортёр для уборки навоза</a>
-                    <a>Планетарный бетоносмеситель</a>
-                    <a>Подъемники</a>
-                    <a>Тележки</a>
-                    <a>Неликвиды</a>
+            </div>
+            <div class="footer__contacts-wrapper">
+                <div class="footer__contacts">
+                    <div>
+                        <img src="/images/icons/maps.png" alt="maps">
+                        <p>Адрес: 352382, Краснодарский край,<br> г. Кропоткин, ул. Пушкина, 79</p>
+                    </div>
+                    <div>
+                        <img src="/images/icons/phone.png" alt="phone">
+                        <p>Тел./Факс: 8(86138) 6-34-03, 6-34-06 <br>
+                            E-mail: sale@semm.ru</p>
+                    </div>
+                    <div>
+                        <img src="/images/icons/clock.png" alt="clock">
+                        <p>Режим работы: пн-пт 8:00-17:00,<br> перерыв 12:00-13:00, сб-вс: выходной</p>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="contacts-wrapper">
-            <div class="contacts">
-                <div>
-                    <img src="/images/icons/maps.png" alt="maps">
-                    <p>Адрес: 352382, Краснодарский край,<br> г. Кропоткин, ул. Пушкина, 79</p>
-                </div>
-                <div>
-                    <img src="/images/icons/phone.png" alt="phone">
-                    <p>Тел./Факс: 8(86138) 6-34-03, 6-34-06 <br>
-                        E-mail: sale@semm.ru</p>
-                </div>
-                <div>
-                    <img src="/images/icons/clock.png" alt="clock">
-                    <p>Режим работы: пн-пт 8:00-17:00,<br> перерыв 12:00-13:00, сб-вс: выходной</p>
+            <div class="footer__company-info-wrapper">
+                <div class="footer__company-info">
+                    <p>© АО "Элеватормельмаш" 2014 г.</p>
+                    <p>Разработка и маркетинг - WebCanape</p>
+                    <p>Политика конфиденциальности</p>
                 </div>
             </div>
-        </section>
-        <section class="company-info-wrapper">
-            <div class="company-info">
-                <p>© АО "Элеватормельмаш" 2014 г.</p>
-                <p>Разработка и маркетинг - WebCanape</p>
-                <p>Политика конфиденциальности</p>
-            </div>
-        </section>
+        </div>
     </div>
-</footer>
+    <script src="js/open-menu.js"></script>
 </body>
 </html>

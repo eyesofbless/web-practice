@@ -1,0 +1,259 @@
+/*page-header*/
+@media (max-width: 1096px) {
+  .page-header__content {
+    font-size: 14px;
+    padding: 15px 40px;
+  }
+}
+@media (max-width: 1096px) {
+  .page-header__burger-icon {
+    display: block;
+  }
+}
+@media (max-width: 1096px) {
+  .page-header__logo-wrapper img:last-child {
+    margin: 0;
+    width: 106px;
+    height: 93px;
+  }
+}
+@media (max-width: 1096px) {
+  .page-header__header-items {
+    gap: 37px;
+  }
+}
+@media (max-width: 1096px) {
+  .page-header__navigation {
+    display: none;
+  }
+}
+@media (max-width: 1096px) {
+  .page-header__schedule {
+    flex-direction: column;
+    text-align: right;
+    margin-left: 65px;
+  }
+}
+@media (max-width: 1322px) {
+  .page-header__mail-wrapper {
+    display: none;
+  }
+}
+@media (max-width: 1096px) {
+  .page-header__language-switcher {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .telephone-numbers {
+    display: none;
+  }
+}
+/*main*/
+@media (max-width: 768px) {
+  .main__content h2 {
+    font-size: 38px;
+  }
+}
+/*hero*/
+@media (max-width: 768px) {
+  .hero {
+    max-height: 514px;
+  }
+}
+@media (max-width: 1096px) {
+  .hero__navigation {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+@media (max-width: 1096px) {
+  .hero__menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: clamp(25px, 8vw, 57px);
+  }
+}
+@media (max-width: 768px) {
+  .hero__sup-title {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__carousel span {
+    font-size: 64px;
+  }
+}
+/*statistics*/
+@media (max-width: 768px) {
+  .main__description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .main__statistics {
+    justify-content: flex-start;
+    gap: 67px;
+  }
+}
+@media (max-width: 768px) {
+  .main__statistics-number {
+    font-size: 72px;
+    line-height: 82px;
+  }
+}
+@media (max-width: 768px) {
+  .main__statistics li p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+/*elevator-equipment*/
+@media (max-width: 768px) {
+  .elevator-equipment__images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 666px) {
+  .elevator-equipment__images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .elevator-equipment__image p {
+    font-size: 16px;
+  }
+}
+/*another-equipment*/
+@media (max-width: 768px) {
+  .another-equipment__images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .another-equipment__image p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .another-equipment__info p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+/*services*/
+@media (max-width: 768px) {
+  .service__image span {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .service__description h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .service__description p {
+    font-size: 14px;
+  }
+}
+/*company-news*/
+@media (max-width: 768px) {
+  .company-news__title-wrapper h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .company-news__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .news-card:last-child {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .news-card h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .news-card p {
+    font-size: 14px;
+  }
+}
+/*feedback-form*/
+@media (max-width: 768px) {
+  .feedback-form__content form {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  form span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .feedback-form__content h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .feedback-form__inputs {
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .feedback-form__contact-info {
+    flex-direction: column;
+  }
+}
+/*footer*/
+@media (max-width: 768px) {
+  .footer__navigation {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .footer__contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer__contacts p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__company-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer__company-info p {
+    font-size: 14px;
+    text-wrap: nowrap;
+  }
+}
+
+
+/*# sourceMappingURL=tablet-ver.css.map */

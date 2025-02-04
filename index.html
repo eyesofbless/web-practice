@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="dist/style.css" rel="stylesheet">
+    <link href="dist/tablet-ver.css" rel="stylesheet">
+    <link href="dist/mobile-ver.css" rel="stylesheet">
     <title>ЭММ</title>
 </head>
 <body>
-<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
-<div class="popup">
-    <div class="menu">
-        <div class="menu-wrapper">
+<div class="menu-popup__overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="menu-popup">
+    <div class="menu-popup__content">
+        <div class="menu-popup__navigation">
             <div>
-                <p class="site-navigation-item">О компании</p>
-                <p class="site-navigation-item">Вакансии</p>
-                <p class="site-navigation-item">Новости</p>
-                <p class="site-navigation-item">Контакты</p>
+                <p class="menu-popup__item">О компании</p>
+                <p class="menu-popup__item">Вакансии</p>
+                <p class="menu-popup__item">Новости</p>
+                <p class="menu-popup__item">Контакты</p>
             </div>
             <div class="telephone-numbers">
                 <p>8 (86138) 6-34-03, 6-34-06</p>
@@ -34,37 +32,37 @@
         <img onclick="toggleMenu()" src="images/icons/cross.svg" alt="">
     </div>
 </div>
-<header class="page-header">
-    <div class="header-wrapper">
-        <div class="logo">
-            <img onclick="toggleMenu()" class="burger-icon" src="images/icons/burger-icon.png" alt="burger-icon">
+<div class="page-header">
+    <div class="page-header__content">
+        <div class="page-header__logo-wrapper">
+            <img onclick="toggleMenu()" class="page-header__burger-icon" src="images/icons/burger-icon.png" alt="burger-icon">
             <img src="images/logo.png" width="132" height="116" alt="logo"/>
         </div>
-        <div class="header-items">
-            <div class="site-navigation-wrapper">
-                <div class="site-navigation">
-                    <a class="site-navigation-item">О компании</a>
-                    <a class="site-navigation-item">Вакансии</a>
-                    <a class="site-navigation-item">Новости</a>
-                    <a class="site-navigation-item">Контакты</a>
+        <div class="page-header__header-items">
+            <div class="page-header__navigation-wrapper">
+                <div class="page-header__navigation">
+                    <a class="page-header__navigation-item">О компании</a>
+                    <a class="page-header__navigation-item">Вакансии</a>
+                    <a class="page-header__navigation-item">Новости</a>
+                    <a class="page-header__navigation-item">Контакты</a>
                 </div>
-                <div class="schedule">
+                <div class="page-header__schedule">
                     <p>пн-пт 8:00-17:00,</p>
                     <p>перерыв 12:00-13:00,</p>
                     <p>сб-вс: выходной</p>
                 </div>
             </div>
-            <div class="mail-container">
+            <div class="page-header__mail-wrapper">
                 <p class="mail">sale@semm.ru</p>
             </div>
-            <div class="languages-and-contacts">
-                <div class="languages">
-                    <div class="language-switcher">
+            <div class="page-header__languages-and-contacts">
+                <div class="page-header__languages">
+                    <div class="page-header__language-switcher">
                         <span>Ru</span>
                         <div></div>
                         <span>En</span>
                     </div>
-                    <div class="language-selection">
+                    <div class="page-header__language-selection">
                         <span>Выбор языка</span>
                         <img src="images/icons/dropdown-button.png" width="9.25" height="9.25" alt="dropdown-button">
                     </div>
@@ -75,163 +73,163 @@
             </div>
         </div>
     </div>
-</header>
-<main>
-    <div class="hero-wrapper">
-        <div class="hero">
-            <nav class="hero-navigation">
-                <div class="hero-navigation-menu">
+</div>
+<div class="main">
+    <div class="hero">
+        <div class="hero__content">
+            <div class="hero__navigation">
+                <div class="hero__menu">
                     <p>Элеваторное оборудование</p>
                     <p>Котлы</p>
                     <p>Металлокострукции</p>
                     <p>Услуги</p>
                 </div>
                 <img src="images/icons/search-icon.png" alt="search-icon" width="27" height="27">
-            </nav>
-            <div class="hero-title">
-                <h1>ЭЛЕВАТОРМЕЛЬМАШ</h1>
-                <p>
+            </div>
+            <div class="hero__title-wrapper">
+                <p class="hero__title">ЭЛЕВАТОРМЕЛЬМАШ</p>
+                <p class="hero__sup-title">
                     Крупнейший поставщик продукции для агропромышленного комплекса России и ближнего зарубежья
                 </p>
             </div>
-            <div class="carousel">
-                <div class="carousel-inner">
+            <div class="hero__carousel">
+                <div class="hero__carousel-content">
                     <img src="images/left-arrow.png" alt="left-arrow">
                     <img src="images/right-arrow.png" alt="right-arrow">
-                    <div class="line"></div>
+                    <div class="hero__carousel-line"></div>
                 </div>
                 <span>01</span>
             </div>
         </div>
     </div>
-    <div class="main-content-wrapper">
-        <div class="main-content">
+    <div class="main__content-wrapper">
+        <div class="main__content">
             <h2>Продукция для аграрной промышленности</h2>
-            <p class="description">
+            <p class="main__description">
                 АО "Элеватормельмаш" г. Кропоткин на протяжении 75 лет является крупнейшим поставщиком продукции для
                 агропромышленного комплекса России и ближнего зарубежья.
             </p>
-            <p class="description">
+            <p class="main__description">
                 Предприятие выпускает большой спектр оборудования в которые входит: элеваторное оборудование,
                 промышленные котлы, бетоносмесители, металлоконструкции и металлические формы для свай.
             </p>
-            <p class="description">
+            <p class="main__description">
                 Собственное конструкторское бюро позволяет разрабатывать новую, а так же регулярно улучшать и
                 модернизировать существующую продукцию.
             </p>
-            <ul class="statistics">
+            <ul class="main__statistics">
                 <li>
-                    <span class="statistics-number">
+                    <span class="main__statistics-number">
                         75 <span>лет</span>
                     </span>
                     <p>опыта на рынке <br> агропромышленного <br> комплекса</p>
                 </li>
                 <li>
-                    <span class="statistics-number">
+                    <span class="main__statistics-number">
                         <span> > </span> 200
                     </span>
                     <p>видов мельнично - <br> элеваторного <br> оборудования</p>
                 </li>
                 <li>
-                    <span class="statistics-number">
+                    <span class="main__statistics-number">
                         25
                     </span>
                     <p>видов котлов <br> промышленного<br> назначения</p>
                 </li>
                 <li>
-                    <span class="statistics-number">
+                    <span class="main__statistics-number">
                         20
                     </span>
                     <p>почвообрабатывающей <br> техники</p>
                 </li>
                 <li>
-                    <span class="statistics-number">
+                    <span class="main__statistics-number">
                         35
                     </span>
                     <p>регионов поставки<br> продукции</p>
                 </li>
             </ul>
-            <section class="elevator-equipment">
+            <div class="elevator-equipment">
                 <h3>Элеваторное оборудование</h3>
-                <div class="images">
-                    <div class="image-container">
+                <div class="elevator-equipment__images">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/auto.jpg" alt="">
                         <p>Автомобиле-<br>разгрузчики</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/conveyor.jpg" alt="">
                         <p>Конвейеры</p>
                         <img src="images/right-arrow.png" alt="">
 
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/samplers.jpg" alt="">
                         <p>Пробоотборники</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/cyclone.jpg" alt="">
                         <p>Циклоны</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/elevators.jpg" alt="">
                         <p>Нории</p>
                         <img src="images/right-arrow.png" alt="">
 
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/oilseed-processing.jpg" alt="">
                         <p>Переработка маслосемян</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/valves.jpg" alt="">
                         <p>Клапаны</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/rack-and-pinion-valves.jpg" alt="">
                         <p>Задвижки реечные</p>
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/dumping-trolley.jpg" alt="">
                         <p>Тележка сбрасывающая</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/sluice-gate.jpg" alt="">
                         <p>Шлюзовый затвор</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/fire-retarding-shutter.jpg" alt="">
-                        <p>Затвор огнепреграждающий</p>
+                        <p>Затвор огнепреграж-<br>дающий</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
-                    <div class="image-container">
+                    <div class="elevator-equipment__image">
                         <img src="images/elevator-equipment/wagon-loading-device.jpg" alt="">
                         <p>Устройство загрузки вагонов</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
                 </div>
-            </section>
-            <section class="another-equipment">
+            </div>
+            <div class="another-equipment">
                 <h3>Другое оборудование</h3>
-                <div class="images">
-                    <div class="image-container">
+                <div class="another-equipment__images">
+                    <div class="another-equipment__image">
                         <img src="images/another-equipment/boilers.png" alt="">
                         <p>Котлы</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
-                    <div class="image-container">
+                    <div class="another-equipment__image">
                         <img src="images/another-equipment/extra-equipment.png" alt="">
                         <p>Дополнительное оборудование</p>
                         <img src="images/right-arrow.png" alt="">
                     </div>
                 </div>
-                <div class="another-equipment-info">
+                <div class="another-equipment__info">
                     <p>Продукция АО "Элеватормельмаш" используется на предприятиях Юга ,Поволжья и Центральной России, а
                         так
                         же Украины, Казахстана, Молдовы и Белоруссии. Большое количество успешных партнерских отношений
@@ -246,16 +244,16 @@
                         увеличить ассортимент выпускаемой продукции.
                     </p>
                 </div>
-            </section>
-            <section class="services">
+            </div>
+            <div class="services">
                 <h3>Услуги компании</h3>
-                <div class="services-wrapper">
+                <div class="services__content">
                     <div class="service">
-                        <div class="image-container">
+                        <div class="service__image">
                             <img src="images/services/1.jpg" alt="">
                             <span>01</span>
                         </div>
-                        <div class="service-description">
+                        <div class="service__description">
                             <h4>Плазменная резка</h4>
                             <p>Компания АО «Элеватормельмаш» осуществляет литейное производство черных и цветных
                                 металлов на
@@ -265,11 +263,11 @@
                         </div>
                     </div>
                     <div class="service">
-                        <div class="image-container">
+                        <div class="service__image">
                             <img src="images/services/2.jpg" alt="">
                             <span>02</span>
                         </div>
-                        <div class="service-description">
+                        <div class="service__description">
                             <h4>Гидроабразивная резка</h4>
                             <p>Уникальная технология, которая может производить резку различных материалов, в том числе
                                 стекла, пластика, металла и многих других.
@@ -277,11 +275,11 @@
                         </div>
                     </div>
                     <div class="service">
-                        <div class="image-container">
+                        <div class="service__image">
                             <img src="images/services/3.jpg" alt="">
                             <span>03</span>
                         </div>
-                        <div class="service-description">
+                        <div class="service__description">
                             <h4>Изготовление изделий на листогибочном станке с ЧПУ</h4>
                             <p>Позволяет изготавливать сложные профили, элементов кровли, оконные отливы и т.д. Такой
                                 станок незаменим при любых гибочных работах.
@@ -289,11 +287,11 @@
                         </div>
                     </div>
                     <div class="service">
-                        <div class="image-container">
+                        <div class="service__image">
                             <img src="images/services/4.jpg" alt="">
                             <span>04</span>
                         </div>
-                        <div class="service-description">
+                        <div class="service__description">
                             <h4>Производство металлоконструкций</h4>
                             <p>Металлоконструкции изготавливаются по индивидуальным параметрам с учетом всех пожеланий
                                 заказчика
@@ -301,18 +299,18 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="company-news">
-                <div class="title-wrapper">
+            </div>
+            <div class="company-news">
+                <div class="company-news__title-wrapper">
                     <h3>Новости компании</h3>
                     <div>
                         <img src="images/l-green-arrow.svg" alt="">
                         <img src="images/r-green-arrow.svg" alt="">
                     </div>
                 </div>
-                <div class="news-content">
+                <div class="company-news__content">
                     <div class="news-card">
-                        <div class="image-container">
+                        <div class="news-card__image">
                             <img src="images/company-news/1.jpg" alt="">
                         </div>
                         <h4>Запасные части для пробоотборника</h4>
@@ -323,7 +321,7 @@
                         </p>
                     </div>
                     <div class="news-card">
-                        <div class="image-container">
+                        <div class="news-card__image">
                             <img src="images/company-news/2.jpg" alt="">
                         </div>
                         <h4>Фузоловушка для расширения производства</h4>
@@ -335,7 +333,7 @@
                         </p>
                     </div>
                     <div class="news-card">
-                        <div class="image-container">
+                        <div class="news-card__image">
                             <img src="images/company-news/3.jpg" alt="">
                         </div>
                         <h4>Произведена мультимодальная отгрузка котлов</h4>
@@ -346,14 +344,14 @@
                         </p>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-        <section class="feedback-form">
-            <div class="form-container">
+        <div class="feedback-form">
+            <div class="feedback-form__content">
                 <form>
                     <h3>Свяжитесь с нами</h3>
-                    <div class="inputs-container">
-                        <div class="contact-info">
+                    <div class="feedback-form__inputs">
+                        <div class="feedback-form__contact-info">
                             <input placeholder="ФИО">
                             <input placeholder="Телефон">
                             <input placeholder="E-mail">
@@ -364,16 +362,16 @@
                     <button type="submit">Отправить</button>
                 </form>
             </div>
-        </section>
+        </div>
     </div>
-</main>
-<footer>
-    <div class="footer-wrapper">
-        <section class="footer-menu-wrapper">
-            <div class="footer-menu">
-                <div class="logo-container">
+</div>
+<div class="footer">
+    <div class="footer__content">
+        <div class="footer__navigation-wrapper">
+            <div class="footer__navigation">
+                <div class="footer__logo-wrapper">
                     <img src="images/logo.png" alt="">
-                    <div class="links">
+                    <div class="footer__links">
                         <a>О компании</a>
                         <a>Каталог продукции</a>
                         <a>Услуги</a>
@@ -382,7 +380,7 @@
                         <a>Контакты</a>
                     </div>
                 </div>
-                <div class="links">
+                <div class="footer__links">
                     <a>Элеваторное Оборудование</a>
                     <a>Котлы</a>
                     <a>Металлоконструкции</a>
@@ -390,7 +388,7 @@
                     <a>Трубы дымовые</a>
                     <a>Водонапорные башни</a>
                 </div>
-                <div class="links">
+                <div class="footer__links">
                     <a>Котел-утилизатор</a>
                     <a>Скреперный транспортёр для уборки навоза</a>
                     <a>Планетарный бетоносмеситель</a>
@@ -399,9 +397,9 @@
                     <a>Неликвиды</a>
                 </div>
             </div>
-        </section>
-        <section class="contacts-wrapper">
-            <div class="contacts">
+        </div>
+        <div class="footer__contacts-wrapper">
+            <div class="footer__contacts">
                 <div>
                     <img src="/images/icons/maps.png" alt="maps">
                     <p>Адрес: 352382, Краснодарский край,<br> г. Кропоткин, ул. Пушкина, 79</p>
@@ -416,16 +414,16 @@
                     <p>Режим работы: пн-пт 8:00-17:00,<br> перерыв 12:00-13:00, сб-вс: выходной</p>
                 </div>
             </div>
-        </section>
-        <section class="company-info-wrapper">
-            <div class="company-info">
+        </div>
+        <div class="footer__company-info-wrapper">
+            <div class="footer__company-info">
                 <p>© АО "Элеватормельмаш" 2014 г.</p>
                 <p>Разработка и маркетинг - WebCanape</p>
                 <p>Политика конфиденциальности</p>
             </div>
-        </section>
+        </div>
     </div>
-</footer>
+</div>
 <script src="js/open-menu.js"></script>
 </body>
 </html>
