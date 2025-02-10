@@ -1,47 +1,44 @@
-/*page-header*/
+@media (max-width: 767px) {
 
-.page-header__content {
-  @media (max-width: 480px) {
-    padding: 15px 20px;
-  }
-}
+  /*page-header*/
 
-.page-header__logo-wrapper img:last-child {
-  @media (max-width: 430px) {
-    width: 79px;
-    height: 69px;
-  }
-}
-
-.page-header__schedule {
-  @media (max-width: 652px) {
-    display: none;
-  }
-}
-
-.page-header__languages {
-  @media (max-width: 767px) {
+  .page-header__languages {
     flex-direction: column;
     align-items: flex-end;
   }
+
+  .telephone-numbers {
+    display: none;
+  }
+
 }
 
-.telephone-numbers {
-  @media (max-width: 767px) {
+@media (max-width: 652px) {
+  .page-header__schedule {
     display: none;
   }
 }
 
-/*main*/
-
-.main__content {
-  @media (max-width: 480px) {
-    padding: 0 20px;
+@media (max-width: 640px) {
+  .another-equipment__images {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.main__content h2 {
-  @media (max-width: 526px) {
+@media (max-width: 540px) {
+  .services__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 538px) {
+  .feedback-form__inputs {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 526px) {
+  .main__content h2 {
     font-size: 26px;
     line-height: 31px;
     width: 100%;
@@ -49,199 +46,162 @@
   }
 }
 
-/*hero*/
+@media (max-width: 480px) {
 
-.hero {
-  @media (max-width: 480px) {
+  /*page-header*/
+
+  .page-header__content {
+    padding: 15px 20px;
+  }
+
+  /*hero*/
+
+  .hero {
     max-height: 375px;
   }
-}
 
-.hero__content {
-  @media (max-width: 480px) {
+  .hero__content {
     padding: 0 20px;
-  }
-}
 
-.hero__title {
-  @media (max-width: 480px) {
+  }
+
+  .hero__title {
     font-size: 25px
-  }
-}
 
-.hero__sup-title {
-  @media (max-width: 480px) {
+  }
+
+  .hero__sup-title {
     font-size: 15px;
     line-height: 24px;
   }
-}
 
-.hero__carousel-content img{
-  @media (max-width: 480px) {
+  .hero__carousel-content img {
     width: 39px;
     height: 21px;
   }
-}
 
-.hero__carousel span {
-  @media (max-width: 480px) {
+  .hero__carousel span {
     font-size: 48px;
   }
-}
 
-/*statistics*/
+  /*main*/
 
-.main__description {
-  @media (max-width: 480px) {
+  .main__content {
+    padding: 0 20px;
+  }
+
+  .main__description {
     font-size: 14px;
     line-height: 24px;
   }
-}
 
-.main__statistics {
-  @media (max-width: 480px) {
+  /*statistics*/
+
+  .main__statistics {
     flex-direction: column;
     gap: 15px;
   }
-}
 
-.main__statistics li {
-  @media (max-width: 480px) {
+  .main__statistics li {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-}
 
-.main__statistics-number {
-  @media (max-width: 480px) {
+  .main__statistics-number {
     font-size: 48px;
     line-height: 58px;
     text-align: right;
     width: 115px;
   }
-}
 
-.main__statistics li p {
-  @media (max-width: 480px) {
+  .main__statistics li p {
     font-size: 14px;
     line-height: 24px;
     word-break: break-word;
   }
-}
 
-h3 {
-  @media (max-width: 462px) {
-    width: 100%;
-    text-align: center;
-  }
-}
+  /*another-equipment*/
 
-/*elevator-equipment*/
-
-.elevator-equipment__images {
-  @media (max-width: 462px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-/*another-equipment*/
-
-.another-equipment__images {
-  @media (max-width: 640px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-
-.another-equipment__info p {
-  @media (max-width: 480px) {
+  .another-equipment__info p {
     font-size: 14px;
     line-height: 24px;
   }
-}
 
-/*services*/
+  /*company-news*/
 
-.services__content {
-  @media (max-width: 540px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-/*company-news*/
-
-.company-news__title-wrapper h3 {
-  @media (max-width: 480px) {
+  .company-news__title-wrapper h3 {
     font-size: 24px;
     width: 100%;
     text-align: center;
   }
-}
 
-.company-news__title-wrapper img {
-  @media (max-width: 480px) {
+  .company-news__title-wrapper img {
     display: none;
   }
-}
 
-.company-news__content {
-  @media (max-width: 480px) {
+  .company-news__content {
     grid-template-columns: 1fr;
   }
-}
 
-.news-card:nth-child(2) {
-  @media (max-width: 480px) {
+  .news-card:nth-child(2) {
     display: none;
   }
-}
 
 
-/*feedback-form*/
+  /*feedback-form*/
 
-.feedback-form__content form {
-  @media (max-width: 480px) {
+  .feedback-form__content form {
     padding: 0 20px;
   }
-}
 
-.feedback-form__content h3 {
-  @media (max-width: 480px) {
+  .feedback-form__content h3 {
     font-size: 24px;
     line-height: 29px;
   }
-}
 
-.feedback-form__inputs {
-  @media (max-width: 538px) {
-    flex-direction: column;
-  }
-}
-
-/*footer*/
+  /*footer*/
 
 
-.footer__contacts {
-
-  @media (max-width: 480px) {
+  .footer__contacts {
     justify-content: center;
-
   }
-}
 
-.footer__contacts div {
-  @media (max-width: 480px) {
+  .footer__contacts div {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-}
 
-.footer__company-info {
-  @media (max-width: 480px) {
+  .footer__company-info {
     padding: 26px 20px 36px 20px;
   }
+
 }
+
+@media (max-width: 462px) {
+
+  h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*elevator-equipment*/
+
+  .elevator-equipment__images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 430px) {
+  .page-header__logo-wrapper img:last-child {
+    width: 79px;
+    height: 69px;
+  }
+}
+
+
+
+
 
